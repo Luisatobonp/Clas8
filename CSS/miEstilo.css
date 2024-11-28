@@ -1,0 +1,69 @@
+.logo{
+    grid-area: logo;
+}
+.header{
+    grid-area: header;
+    text-align: end;
+    font-family: Luisa Tobon;
+    
+}
+.nav{
+    grid-area: nav;
+    text-align: center;
+    
+    
+}
+a{
+    font-family: Arial;
+    text-decoration: none;
+    background-color: rgb(150, 101, 196);
+    color: black;
+    margin: 5px;
+    font-weight: bold;
+}
+@font-face{
+    font-family: Luisa Tobon;
+    src: url(/static/DancingScript-Bold.ttf);
+}
+.empresa{
+    color: black;
+  /*   font-family: Luisa Tobon;display: grid;
+    grid-template-columns: 30px 70px; */
+    text-align: center;
+}
+.main{
+    grid-area: main;
+    height: 300px;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+.grid-container{
+    background-color: cornflowerblue;
+    border-color: 1px solid cornflowerblue;
+    border-radius: 5px;
+    padding: 5px;
+    display: grid;
+    /*grid-template-areas: 'header header header header header'
+                            'nav  main  main  main  article'
+                            'nav  footer  footer  footer  footer';*/
+    grid-template-areas: 'logo header header header header'
+                         'nav  nav    nav    nav    nav'
+                         'main  main  main  main  main'  
+                         'footer    footer  footer  footer  footer';
+}
+
+
+
+.grid-container div{
+    background-color: rgb(240, 205, 211);
+    border: 2px solid black;
+}
+
+
+.nav a {
+    text-decoration: none;
+}
